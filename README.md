@@ -12,6 +12,7 @@
 [![Documentation](https://img.shields.io/badge/Documentation-Governance--Grade-brightgreen?style=flat-square)]()
 [![Workflow](https://img.shields.io/badge/Workflow-5_Engine_System-orange?style=flat-square)]()
 [![Status](https://img.shields.io/badge/Status-Active_Stewardship-purple?style=flat-square)]()
+[![Review Ready](https://img.shields.io/badge/Review--Ready-Performance_Content_Optimized-blueviolet?style=flat-square)]()
 [![MIT License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
 
 </div>
@@ -35,6 +36,7 @@ It unifies:
 - Burnout analysis  
 - Sustainability forecasting  
 - Master skills & experience synthesis  
+- Performance review content generation  
 
 All engines output structured markdown files for version control, auditability, and AI‑assisted analysis.
 
@@ -49,6 +51,7 @@ All engines output structured markdown files for version control, auditability, 
 - Early burnout detection  
 - Strategic 3–6 month projections  
 - ATS‑friendly skills & experience synthesis  
+- High‑quality performance review content  
 - A unified model for sustainable high performance  
 
 </td>
@@ -62,7 +65,7 @@ All engines output structured markdown files for version control, auditability, 
 ![System Workflow Diagram](Personal Career Operating System Workflow.png)
 
 The system flows from **daily activity** → **aggregation** → **promotion evaluation** →  
-**burnout analysis** → **sustainability integration** → **master skills synthesis**.
+**burnout analysis** → **sustainability integration** → **master skills synthesis** → **performance review generation**.
 
 ---
 
@@ -70,7 +73,8 @@ The system flows from **daily activity** → **aggregation** → **promotion eva
 
 ## **Engine 1 — Daily Activity Logger**
 Captures timestamped, append‑only daily work activity.  
-**Output:** `daily_logs.md`
+**Output:** `daily_logs.md`  
+**Note:** Updated to include awareness of personal, sensitive, and proprietary data.
 
 ## **Engine 2 — Aggregator / Markdown Builder**
 Rolls up logs into structured weekly/monthly summaries.  
@@ -94,6 +98,18 @@ Aggregates structured outputs from all engines to produce a polished, ATS‑frie
 
 **Output:** `master_skills_experience_summary.md`  
 **Source File:** `PCOS Master Skills & Experience Synthesizer.md`
+
+---
+
+# 🧩 Performance Review Generator (New)
+
+This standalone prompt assists with generating **high‑quality performance review content** using structured data from the PCOS engines.
+
+**Source File:** `Performance Review Generator Prompt.md`  
+**Purpose:**  
+- Converts aggregated accomplishments into review‑ready narratives  
+- Supports self‑reviews, manager reviews, and 360‑style summaries  
+- Ensures clarity, professionalism, and evidence‑based framing  
 
 ---
 
@@ -127,12 +143,13 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 | **Personal Career Operating System Workflow.png** | System workflow diagram |
 | **Career_Operating_System_Executive_Guide.pdf** | Full executive guide |
 | **Career Operating System.docx** | Editable guide |
-| **Daily Performance Intake & Structuring Prompts.md** | Engine 1 prompts |
+| **Daily Performance Intake & Structuring Prompts.md** | Engine 1 prompts (updated for sensitive/proprietary data awareness) |
 | **Performance Aggregator & Trend Analysis Prompts.md** | Engine 2 & 4 prompts |
 | **Promotion & Market Readiness Evaluator.md** | Engine 3 prompts |
 | **Burnout Deep Analyzer.md** | Engine 4 prompts |
 | **Performance Sustainability Integrator.md** | Engine 5 prompts |
 | **PCOS Master Skills & Experience Synthesizer.md** | Engine 6 prompts (ATS‑friendly synthesis) |
+| **Performance Review Generator Prompt.md** | Generates structured, review‑ready performance content |
 | **Career File Maintenance & Structure Validator.md** | Validator documentation |
 | **Personal Career Operating System Workflow.pdf** | Printable workflow |
 | **LICENSE** | License |
@@ -148,7 +165,8 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 4. Analyze burnout trends → `burnout_trends.md`  
 5. Integrate everything → `sustainability_integrator.md`  
 6. Generate ATS‑ready skills summary → `master_skills_experience_summary.md`  
-7. Validate structure → run the validator  
+7. Generate performance review content → `Performance Review Generator Prompt.md`  
+8. Validate structure → run the validator  
 
 **All prompts are in plain Markdown — no apps or subscriptions required.**
 
@@ -186,6 +204,38 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 - Traceable  
 - Repeatable  
 - ATS‑friendly  
+- Review‑ready  
+
+---
+
+# 📦 Use Cases
+
+The Personal Career Operating System supports a wide range of professional workflows:
+
+### **📈 Promotion Packets**
+- Evidence‑based accomplishments  
+- Capability growth tracking  
+- Market‑aligned readiness signals  
+
+### **📝 Annual & Semi‑Annual Performance Reviews**
+- Review‑ready narratives  
+- Strengths, impact, and outcomes  
+- Burnout and sustainability insights  
+
+### **📄 Resume & LinkedIn Updates**
+- ATS‑optimized skills summary  
+- Quantified achievements  
+- Role‑aligned bullet generation  
+
+### **🎯 Career Planning & Goal Setting**
+- Longitudinal performance trends  
+- Capability gaps  
+- 3–6 month projections  
+
+### **🧭 Weekly/Monthly Reflection**
+- Pattern recognition  
+- Workload balance  
+- Strategic alignment  
 
 ---
 
@@ -206,6 +256,7 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 - Daily Performance Intake prompts  
 - Aggregator & Trend Analysis prompts  
 - Promotion Evaluator prompts  
+- Performance Review Generator Prompt.md  
 - Repository banner  
 - Initial README.md  
 - Career File Maintenance & Structure Validator.md  
@@ -218,6 +269,9 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 - Added accessibility alt text  
 - Added SEO keyword block  
 - Added clickable license badge  
+- Added Review‑Ready badge  
+- Added Use Cases section  
+- Updated Daily Performance Intake prompt description  
 
 ### **Structure**
 - Standardized file naming  
