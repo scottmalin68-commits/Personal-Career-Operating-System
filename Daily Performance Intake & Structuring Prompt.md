@@ -1,6 +1,6 @@
 # Daily Performance Intake & Structuring Prompt
 Author: Scott M
-Version: 1.3
+Version: 1.4
 Last Updated: 2026-02-11
 ## Goal
 Transform semi-structured daily activity notes into a standardized, queryable Markdown performance log entry suitable for:
@@ -9,10 +9,15 @@ Transform semi-structured daily activity notes into a standardized, queryable Ma
 - Promotion readiness analysis
 - Personal performance dashboard analytics
 - Burnout and sustainability monitoring
-Output must be: structured, strictly evidence-based, non-exaggerated, neutral in tone, safe for executive visibility (professional language, no slang, no subjective hype), **and privacy-protected (redact or generalize sensitive, personal, or proprietary information)**.
+Output must be: structured, strictly evidence-based, non-exaggerated, neutral in tone, safe for executive visibility (professional language, no slang, no subjective hype), and privacy-protected (redact or generalize sensitive, personal, or proprietary information).
 
 ---
 ## Changelog
+### v1.4 (external feedback addition)
+- Added optional "External Feedback / Notes" intake field for manager, peer, or cross-team comments
+- Introduced Feedback Signal Hooks for neutral extraction and pattern flagging
+- Extended Trend Signals and Skill Signals to include external feedback patterns
+- Added external_feedback_present metadata flag
 ### v1.3 (privacy & sensitivity revision)
 - Added Sensitivity Scan (pre-validation) with redaction/generalization rules
 - Extended output flags with privacy_flags section
@@ -38,6 +43,7 @@ Output must be: structured, strictly evidence-based, non-exaggerated, neutral in
 - Metadata auto-calculation
 - Confidence scoring
 - Clarifying question guardrails
+
 ---
 ## Recommended AI Engines (Best → Worst for Structured Analysis Tasks)
 1. GPT-5 class models (strongest structured reasoning + consistency)
@@ -45,6 +51,7 @@ Output must be: structured, strictly evidence-based, non-exaggerated, neutral in
 3. Gemini Advanced class models (good aggregation, occasional over-inference)
 4. Smaller / mini models (acceptable for formatting, weaker at inference control)
 Highest-tier reasoning models strongly recommended for quarterly aggregation and promotion analysis.
+
 ---
 ## Intake Format (User Provides Below This Line)
 Date:
@@ -61,8 +68,12 @@ Compliance / Risk:
 -
 Other Notes:
 -
+External Feedback / Notes (optional):
+- (brief notes from manager 1:1s, peers, cross-team members, etc. – e.g., "Manager: strong initiative on triage script", "Peer: helpful collab on detection rule", "Cross-team: appreciated quick response to alert")
 (If input is unstructured or paragraph form, attempt to parse into these categories before proceeding.)
-**User reminder**: For privacy, please anonymize any sensitive, personal, or proprietary information in your notes (e.g., use "Client A", "Project X", "a major customer", avoid real names, IP addresses, financial figures, health data, etc.).
+
+**User reminder**: For privacy, please anonymize any sensitive, personal, or proprietary information in your notes (e.g., use "Client A", "Project X", "a major customer", avoid real names, IP addresses, financial figures, health data, etc.). For External Feedback, generalize sources if needed (e.g., "a peer" instead of names) and keep notes concise/factual.
+
 ---
 ## AI Responsibilities
 ### 0. Sensitivity Scan (runs before Validation Pass)
@@ -73,7 +84,6 @@ Scan the entire input for potential sensitive, personal, or proprietary informat
 - Financial amounts, contract values, PII
 - Health-related details, personal struggles beyond general energy/mood
 - Trade secrets, unreleased product details, confidential project specifics
-
 Handling rules:
 - If detected → Redact or generalize (e.g., "Client XYZ breach" → "a client data incident"; "IP 192.168.x.x" → "[IP redacted]"; "met with Jane Doe" → "met with a stakeholder").
 - Never output raw sensitive data in any section.
@@ -135,6 +145,16 @@ Separate confirmed vs. estimated. Do **not** project cumulative savings unless u
   • medium: 30–70%
   • high: >70% or “mostly alerts/tickets” phrasing
 
+### 6. Feedback Signal Hooks
+Extract and record external feedback (manager, peer, cross-team, etc.) only when provided in the dedicated field – never infer, fabricate, or solicit unless critical vagueness blocks other scoring.
+- Record notes verbatim or lightly paraphrased for clarity if lengthy.
+- Tag source type if user specified (e.g., Manager, Peer, Cross-team); default to "External" if unspecified.
+- Identify recurring themes only across multiple days/entries (e.g., "collaboration praised" on 3+ occasions → note in Trend Signals).
+- Do not assign scores, impact, initiative levels, or burnout flags based on feedback.
+- Apply Sensitivity Scan: generalize any names/details (e.g., "Jane said..." → "a stakeholder noted...").
+- Flag presence in metadata (external_feedback_present).
+Only process if user provides content in the field.
+
 ## Output Format (Strict)
 ---
 date: YYYY-MM-DD
@@ -148,6 +168,7 @@ reactive_load_estimate: low | medium | high
 tags: [tag1, tag2, tag3] ← max 5, keyword-style
 impact_score: #/10
 confidence: low | medium | high
+external_feedback_present: yes | no
 burnout_flags:
   sustained_low_energy: yes | no
   high_meeting_load: yes | no
@@ -183,11 +204,13 @@ Concise, evidence-based, neutral summary of demonstrated value. No exaggeration.
 
 ## Skill Signals
 - Technical: …
-- Behavioral: …
+- Behavioral: … (include patterns from external feedback if relevant, e.g., "Behavioral: collaboration noted positively by peers/cross-team in multiple entries")
 (Max 6–8 bullets total)
 
 ## Trend Signals
 Observations useful for quarterly aggregation, promotion analysis, burnout monitoring.
+- [existing or inferred trends...]
+- External feedback patterns: [neutral summary if patterns exist, e.g., "Manager highlighted proactive contributions in 2 entries"; "Peers/cross-team noted helpful collaboration on detection work"; "No external feedback recorded"]
 
 ## Confidence Explanation
-Short rationale for the assigned confidence level.
+Short rationale for the assigned confidence level (include note if external feedback influenced trends but not scores).
