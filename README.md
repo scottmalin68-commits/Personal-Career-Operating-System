@@ -1,17 +1,20 @@
 # Personal Career Operating System
 
-![Banner](BANNER_Personal-Career-Operating-System.png)
+![Personal Career Operating System Banner](BANNER_Personal-Career-Operating-System.png)
 
-<p align="center">
+<!-- SEO Keywords -->
+<!-- Career Development, Engineering Career, Burnout Prevention, Personal Knowledge Management, AI Productivity, ATS Optimization, Career Operating System -->
+
+<div align="center">
 
 <!-- Badge Suite -->
-<img src="https://img.shields.io/badge/Version-v1.0-blue" />
-<img src="https://img.shields.io/badge/Documentation-Governance--Grade-brightgreen" />
-<img src="https://img.shields.io/badge/Workflow-5_Engine_System-orange" />
-<img src="https://img.shields.io/badge/Status-Active_Stewardship-purple" />
-<img src="https://img.shields.io/badge/License-MIT-lightgrey" />
+[![Version](https://img.shields.io/badge/Version-v1.0-blue?style=flat-square)]()
+[![Documentation](https://img.shields.io/badge/Documentation-Governance--Grade-brightgreen?style=flat-square)]()
+[![Workflow](https://img.shields.io/badge/Workflow-5_Engine_System-orange?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-Active_Stewardship-purple?style=flat-square)]()
+[![MIT License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
 
-</p>
+</div>
 
 ---
 
@@ -31,6 +34,7 @@ It unifies:
 - Promotion readiness evaluation  
 - Burnout analysis  
 - Sustainability forecasting  
+- Master skills & experience synthesis  
 
 All engines output structured markdown files for version control, auditability, and AI‑assisted analysis.
 
@@ -44,6 +48,7 @@ All engines output structured markdown files for version control, auditability, 
 - Resume‑ready bullet generation  
 - Early burnout detection  
 - Strategic 3–6 month projections  
+- ATS‑friendly skills & experience synthesis  
 - A unified model for sustainable high performance  
 
 </td>
@@ -54,9 +59,10 @@ All engines output structured markdown files for version control, auditability, 
 
 # 🧠 System Architecture
 
-![Workflow](Personal Career Operating System Workflow.png)
+![System Workflow Diagram](Personal Career Operating System Workflow.png)
 
-The system flows from **daily activity** → **aggregation** → **promotion evaluation** → **burnout analysis** → **sustainability integration**.
+The system flows from **daily activity** → **aggregation** → **promotion evaluation** →  
+**burnout analysis** → **sustainability integration** → **master skills synthesis**.
 
 ---
 
@@ -82,6 +88,13 @@ Identifies workload imbalance, stress patterns, and sustainability risks.
 Merges promotion readiness + burnout risk into a unified trajectory model.  
 **Output:** `sustainability_integrator.md`
 
+## **Engine 6 — PCOS Master Skills & Experience Synthesizer**
+Aggregates structured outputs from all engines to produce a polished, ATS‑friendly  
+**Master Skills & Experience Summary**.
+
+**Output:** `master_skills_experience_summary.md`  
+**Source File:** `PCOS Master Skills & Experience Synthesizer.md`
+
 ---
 
 # 🗂️ File Maintenance & Structure Validator
@@ -98,9 +111,11 @@ It supports:
 - `daily_logs.md`  
 - `aggregated_activity_summary.md`  
 - `promotion_assessment.md`  
-- `burnout_trends.md`
+- `burnout_trends.md`  
+- `sustainability_integrator.md`  
+- `master_skills_experience_summary.md`
 
-See **Career File Maintenance & Structure Validator.md** for full validator usage instructions and configuration details.
+See **Career File Maintenance & Structure Validator.md** for full validator usage instructions.
 
 ---
 
@@ -117,7 +132,8 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 | **Promotion & Market Readiness Evaluator.md** | Engine 3 prompts |
 | **Burnout Deep Analyzer.md** | Engine 4 prompts |
 | **Performance Sustainability Integrator.md** | Engine 5 prompts |
-| **Career File Maintenance & Structure Validator.md** | Validator documentation and usage instructions |
+| **PCOS Master Skills & Experience Synthesizer.md** | Engine 6 prompts (ATS‑friendly synthesis) |
+| **Career File Maintenance & Structure Validator.md** | Validator documentation |
 | **Personal Career Operating System Workflow.pdf** | Printable workflow |
 | **LICENSE** | License |
 | **README.md** | This file |
@@ -131,31 +147,32 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 3. Evaluate promotion readiness → `promotion_assessment.md`  
 4. Analyze burnout trends → `burnout_trends.md`  
 5. Integrate everything → `sustainability_integrator.md`  
-6. Validate structure → run the validator (see **Career File Maintenance & Structure Validator.md**)  
+6. Generate ATS‑ready skills summary → `master_skills_experience_summary.md`  
+7. Validate structure → run the validator  
+
+**All prompts are in plain Markdown — no apps or subscriptions required.**
 
 ---
 
 # 🔗 Cross‑Repo Ecosystem Links
 
-Your ecosystem is now interconnected and branded as a unified suite:
-
-### **Career & Professional Development**
-- **Job-Search-Career-Prompts**  
+### **💼 Career & Professional Development**
+- **Job-Search-Career-Prompts** – Resume, interview, and career documentation suite  
   https://github.com/scottmalin68-commits/Job-Search-Career-Prompts
 
 - **Personal-Career-Operating-System** *(this repo)*  
   https://github.com/scottmalin68-commits/Personal-Career-Operating-System
 
-### **Cybersecurity & Technical Learning**
-- **Cybersecurity-Learning-Prompts**  
+### **🛡️ Cybersecurity & Technical Learning**
+- **Cybersecurity-Learning-Prompts** – Workshops, adversarial reasoning, cognitive load mapping  
   https://github.com/scottmalin68-commits/Cybersecurity-Learning-Prompts
 
-### **Productivity & Systems Design**
-- **Time-and-Project-Management**  
+### **⏱️ Productivity & Systems Design**
+- **Time-and-Project-Management** – Planning, scheduling, and execution frameworks  
   https://github.com/scottmalin68-commits/Time-and-Project-Management
 
-### **General AI Prompting & Utilities**
-- **Misc-AI-Prompts**  
+### **🧰 General AI Prompting & Utilities**
+- **Misc-AI-Prompts** – Tools, utilities, and general-purpose AI prompts  
   https://github.com/scottmalin68-commits/Misc-AI-Prompts
 
 ---
@@ -168,6 +185,7 @@ Your ecosystem is now interconnected and branded as a unified suite:
 - Sustainable  
 - Traceable  
 - Repeatable  
+- ATS‑friendly  
 
 ---
 
@@ -181,21 +199,25 @@ Your ecosystem is now interconnected and branded as a unified suite:
 - Full Career Operating System architecture  
 - Executive Guide (PDF + DOCX)  
 - Workflow diagram (PNG + PDF)  
-- All five engine prompt files  
+- All six engine prompt files  
 - Burnout Deep Analyzer  
 - Performance Sustainability Integrator  
+- PCOS Master Skills & Experience Synthesizer  
 - Daily Performance Intake prompts  
 - Aggregator & Trend Analysis prompts  
 - Promotion Evaluator prompts  
 - Repository banner  
 - Initial README.md  
-- **Career File Maintenance & Structure Validator.md**
+- Career File Maintenance & Structure Validator.md  
 
 ### **Documentation**
 - Added governance‑grade README  
 - Added badge suite  
 - Added two‑column layout  
 - Added cross‑repo ecosystem links  
+- Added accessibility alt text  
+- Added SEO keyword block  
+- Added clickable license badge  
 
 ### **Structure**
 - Standardized file naming  
