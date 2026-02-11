@@ -222,10 +222,3 @@ See **Career File Maintenance & Structure Validator.md** for full validator usag
 ### **Structure**
 - Standardized file naming  
 - Ensured markdown outputs align with validator requirements  
-
----
-
-# ⭐ Support the Ecosystem
-
-If this framework elevates your career clarity, consider starring the repo.
-
