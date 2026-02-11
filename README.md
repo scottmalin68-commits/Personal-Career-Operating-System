@@ -86,19 +86,21 @@ Merges promotion readiness + burnout risk into a unified trajectory model.
 
 # 🗂️ File Maintenance & Structure Validator
 
-Ensures all markdown files remain:
+The validator ensures all markdown files remain:
 
 - Structurally consistent  
 - Metadata‑complete  
 - Properly formatted  
 - Ready for downstream analysis  
 
-Supports:
+It supports:
 
 - `daily_logs.md`  
 - `aggregated_activity_summary.md`  
 - `promotion_assessment.md`  
 - `burnout_trends.md`
+
+See **Career File Maintenance & Structure Validator.md** for full validator usage instructions and configuration details.
 
 ---
 
@@ -115,6 +117,7 @@ Supports:
 | **Promotion & Market Readiness Evaluator.md** | Engine 3 prompts |
 | **Burnout Deep Analyzer.md** | Engine 4 prompts |
 | **Performance Sustainability Integrator.md** | Engine 5 prompts |
+| **Career File Maintenance & Structure Validator.md** | Validator documentation and usage instructions |
 | **Personal Career Operating System Workflow.pdf** | Printable workflow |
 | **LICENSE** | License |
 | **README.md** | This file |
@@ -128,7 +131,7 @@ Supports:
 3. Evaluate promotion readiness → `promotion_assessment.md`  
 4. Analyze burnout trends → `burnout_trends.md`  
 5. Integrate everything → `sustainability_integrator.md`  
-6. Validate structure → run the validator  
+6. Validate structure → run the validator (see **Career File Maintenance & Structure Validator.md**)  
 
 ---
 
@@ -186,6 +189,7 @@ Your ecosystem is now interconnected and branded as a unified suite:
 - Promotion Evaluator prompts  
 - Repository banner  
 - Initial README.md  
+- **Career File Maintenance & Structure Validator.md**
 
 ### **Documentation**
 - Added governance‑grade README  
