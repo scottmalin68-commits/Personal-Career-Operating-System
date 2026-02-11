@@ -200,3 +200,5 @@ Tier: Stabilize Before Scaling (reduce reactive load 20–30%)
 - Do not re-interpret or add new inferences
 - If inputs incomplete → limit analysis & set low confidence
 - Prioritize neutrality and evidence over optimism
+
+All source data has been sanitized during intake processing. Maintain privacy by using only the generalized/anonymized descriptions provided; never reconstruct, de-anonymize, or introduce specific names, clients, companies, or proprietary details.

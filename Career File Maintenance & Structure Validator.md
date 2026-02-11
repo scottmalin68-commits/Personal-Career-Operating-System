@@ -171,3 +171,5 @@ Maintenance Report
 - Never alter meaning or remove content
 - If file unrecognizable → output original + "Unable to confidently repair structure"
 - Summarize all changes for transparency
+
+All source data has been sanitized during intake processing. Maintain privacy by using only the generalized/anonymized descriptions provided; never reconstruct, de-anonymize, or introduce specific names, clients, companies, or proprietary details.

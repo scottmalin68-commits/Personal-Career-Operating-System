@@ -21,6 +21,8 @@ Never inflate impact.
 Never assume missing data equals zero.  
 Never extrapolate or interpolate missing values.
 
+All source data has been sanitized during intake processing. Maintain privacy by using only the generalized/anonymized descriptions provided; never reconstruct, de-anonymize, or introduce specific names, clients, companies, or proprietary details.
+
 ---
 
 ## How To Use This Prompt

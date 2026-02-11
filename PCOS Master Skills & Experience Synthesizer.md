@@ -113,6 +113,8 @@ Professionals leveraging PCOS outputs to create resumes, LinkedIn profiles, inte
 - Patch versioning and changelog required. 
 - Include date & time of synthesis. 
 
+All source data has been sanitized during intake processing. Maintain privacy by using only the generalized/anonymized descriptions provided; never reconstruct, de-anonymize, or introduce specific names, clients, companies, or proprietary details.
+
 ---
 
 ## EXAMPLE END-OF-FILE PCOS EVIDENCE SUMMARY
